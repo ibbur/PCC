@@ -48,3 +48,12 @@ print(motorcycles)
     # Add it all back again
 motorcycles.insert(1, 'yamaha')
 print(motorcycles)
+
+    # Here we'll learn to use the pop method
+popped_motorcycles = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycles)
+
+    # Put the popped item back
+motorcycles.insert(2, 'suzuki')
+print(motorcycles)
