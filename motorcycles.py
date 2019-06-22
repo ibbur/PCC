@@ -75,13 +75,26 @@ first_owned = motorcycles.pop(0)
 print ('The first motorcycle I owned was a ' + first_owned.title() + '.')
 print(motorcycles)
 
-print("Put the popped item back in. --- ")
+print("-- Put the popped item back in. --- ")
 motorcycles.insert(0, 'honda')
 print(motorcycles)
 
-print("Add ducati back in for the exercise.")
+    # Learning about the remove method
+    # The remove() method allows you to remove an item when you don't konw the position.
+
+print("-- Add ducati back in for the exercise.--")
 motorcycles.append('ducati')
 
 print(motorcycles)
 motorcycles.remove('ducati')
+print(motorcycles)
+
+print("-- Add ducati back in.--")
+motorcycles.append('ducati')
+print(motorcycles)
+
+too_expensive = "ducati"
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print("\nA " + too_expensive.title() + " is too expensive for me.")
 print(motorcycles)
