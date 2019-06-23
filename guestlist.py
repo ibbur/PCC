@@ -1,41 +1,59 @@
-guestlist =['Dad', 'Pappaw', 'Ben Franklin']
-print(guestlist)
+    # Aaron Frankel 2019-6-22
+    # The purpose of this file is to exercies my list skills to this point.
+    # This is the second version of the file so I can practice again.
+    # I will print extra messages instead of using commints.
 
-print("\n" + guestlist[0] + ", I'd like to invite you to dinner. There will be interesting guests.")
-print("\n" + guestlist[1] + ", please join me for a small dinner party.")
-print("\n" + guestlist[2] + ", please join us for a dinner party. You'll find the guests interesting and conversations enlightening.")
+guests = ['dad', 'pappaw', 'ben']
+    # It's too bad guests=guests.title() doesn't work. It would elliminate bloat.
+print(guests)
 
-print('\n --- Change the guest list. --- ')
-print('\n' + guestlist[2] + ' cannot make it to the dinner. We will invite the person we should have included to begin with.')
-guestlist[2] = "Shaush"
-print("\n" + guestlist[2] +", please join us for dinner. We'd love to see you, and I owe you an appology or twelve.")
+invitation = ", please join us for a small dinner party. "
+print("\n" + guests[0].title() + invitation)
+print("\n" + guests[1].title() + invitation)
+print("\n" + guests[2].title() + invitation)
 
-print('\nWe found a larger venue. Now we can add three more guests.')
-guestlist.insert(3, 'Morty')
-guestlist.insert(4, 'Gemmaw')
-guestlist.append('Joe')
-print("\nLet's see who the new additions are.")
-print(guestlist)
-print(guestlist[5] + ", join us for dinner. It would be great to see you again.")
-print(guestlist[3] + ", I'd love to meet you. Please join us for dinner.")
-print(guestlist[4] + ", won't you join us for dinner. I'd love to see you--so much to catch up on.")
+print("\n" + guests[2].title() + " will not be able to make it. A new guest will be invited.")
+guests[2] = ('morty')
+print("\nA guest has changed. " + guests[2].title() + " is now being invited.")
+print("\n" + guests[2].title() + invitation)
+may = " may join us."
+print("\n" + guests[0].title() + invitation + guests[2].title() + may)
+print("\n" + guests[1].title() + invitation + guests[2].title() + may)
 
-print('\nThere is a seating issue, folks. Removing guests, unfortunately.')
-guestlist_pop = guestlist.pop()
-print("\nI'm terriblely sorry, " + guestlist_pop + ". There's been a reduction in available seating. We'll arrange anther dinner in short order, so we can all get to gether.")
-guestlist_pop = guestlist.pop()
-print("\nI'm very sorry, " +  guestlist_pop + ". The jerk who wrote the exercise removed seats from our dinner. We'll arrange another dinner soon.")
-guestlist_pop = guestlist.pop()
-print("\nMy deepest appologies, " + guestlist_pop + ". The wanker who wrote the great python book removed seats from our party. We'll arrange another soon.")
-guestlist_pop = guestlist.pop()
-print("\nNow I owe you a thirteenth appology, " + guestlist_pop + ". The Nerf herder who wrote the book cut our seating. We'll set a date for dinner, just you and I. And we'll arrange another dinner party.")
+print("\nWe just received word from the book author we're getting more seats.")
+print("We will now add to the list and invite more guests!")
 
-print("\nOur guest list now consists of " + guestlist[0] + " and " + guestlist[1] + ".")
-print("\n" + guestlist[0] + " and " + guestlist[1] + ", there are still seats for the two of you. Please be sure to join me for dinner.")
+guests.insert(3, 'shausha')
+guests.insert(4, 'gemmaw')
+guests.append('joe')
+print("\nThe list now consists of...")
+print(guests)
+print("We will now invite the new additions to the list.")
 
-print("\nWell shit! Now the author is canceling the whole party.")
-print(guestlist)
-del guestlist[1]
-print(guestlist)
-del guestlist[0]
-print(guestlist)
+print("\n" + guests[3].title() + invitation)
+print("\n" + guests[4].title() + invitation)
+print("\n" + guests[5].title() + invitation)
+newthree = (guests[3].title() + ", " + guests[4].title() + ", and " + guests[5].title() + ". ")
+print("\n" + guests[0].title() + ", we're also inviting " + newthree)
+
+print("\nThe author informed us we've lost four of our six seats.")
+sorry = ", the jerk author took away seats. We'll rechedule a new party soon. "
+popped = guests.pop()
+print("\n" + popped.title() + sorry)
+print(guests)
+popped = guests.pop()
+print("\n" + popped.title() + sorry)
+print(guests)
+popped = guests.pop()
+print("\n" + popped.title() + sorry)
+print(guests)
+popped = guests.pop()
+print("\n" + popped.title() + sorry)
+print(guests)
+
+print("\n" + guests[0].title() + " and " + guests[1].title() + ", you are still invited.")
+
+print("\nThe shady author cancelled our party. Shame. Removing all guests.")
+del guests[1]
+del guests[0]
+print(guests)
