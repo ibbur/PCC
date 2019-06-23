@@ -36,6 +36,10 @@ print("\n" + guests[5].title() + invitation)
 newthree = (guests[3].title() + ", " + guests[4].title() + ", and " + guests[5].title() + ". ")
 print("\n" + guests[0].title() + ", we're also inviting " + newthree)
 
+# The next two lines are added per exercise 3-9.
+print("\n______How many guests are on the list?______")
+print(len(guests))
+
 print("\nThe author informed us we've lost four of our six seats.")
 sorry = ", the jerk author took away seats. We'll rechedule a new party soon. "
 popped = guests.pop()
