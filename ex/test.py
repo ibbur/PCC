@@ -1,31 +1,33 @@
-twenty = [value for value in range(1,21)]
-print(twenty)
-print("\n")
+# Aaron Frankel 2019-7-3
 
-million = [value for value in range(1,101)]
-print(million)
-print("\n")
-
-print(min(million))
-print(max(million))
-print(sum(million))
-print("\n")
-
-odd_numbers = []
-for value in range(0,21,2):
-    odd_numbers.append(value)
-    print(value)
-
-print("\n")
-for value in range(3,31,3):
-    print(value)
+for values in range(1,21):
+    print(values)
 
 print("\n")
 
-for cube in range(1,11,):
-    print(cube**3)
+mill = list(range(1,1001))
+for values in mill:
+    print(values)
 
 print("\n")
 
-cube_list = [cube**3 for cube in range(1,11)]
-print(cube_list)
+print(min(mill))
+print(max(mill))
+print(sum(mill))
+
+print("\n")
+
+odd = list(range(1,21,2))
+for values in odd:
+    print(values)
+
+print("\n")
+
+three = list(range(3,31,3))
+for values in three:
+    print(values)
+
+print("\n")
+
+cubes = [values**3 for values in range(1,11)]
+print(cubes)
