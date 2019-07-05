@@ -12,3 +12,20 @@ print(pizzas[1].title() + " is my favorite style now. Regular is ok. I'm just no
 print(pizzas[2].title() + " is my all time favorite pizza. I could eat it every day.")
 
 print("\nJennifer really loves pizza. She might like it more than I do!")
+
+print("\n")
+
+friend_pizzas = pizzas[:-1]
+friend_pizzas.append('chicken')
+
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+
+print("\n")
+
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
+
+print("\n")
