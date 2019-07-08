@@ -59,7 +59,21 @@ cars.reverse()
 print("Here is the resorted list:")
 print(cars)
 
-print("\nNow let's use the len() function.")
+print("\nNow let's use the len() function to count the cars in the list.")
 # The damn author didn't include the print code and I had to go look it up.
 # Perhaps he thinks I now know enough to know how to form this without telling.
 print(len(cars))
+
+# Added 2019-7-5 per Chapter 5 of PCC
+print("\n")
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+# Convert the item to a lower case before comparison
+for car in cars:
+    if car.lower() == 'audi':
+        print("True")
+    else:
+        print("False")

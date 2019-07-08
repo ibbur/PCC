@@ -20,5 +20,3 @@ for dimension in dimensions:
     print(dimension)
 
 print("\n")
-
-When compared with lists, tuples are simple data structures. Use them when you want to store a set of values that should not be changed throughout th elife of a program.
