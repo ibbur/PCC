@@ -34,9 +34,20 @@ print(Pistol == 'G19')
 print("Is your rifle a LMT MWS? I predict yes.")
 print(Rifle == 'LMT MWS')
 
+print("Is your truck a F150? I predict no.")
+print(Truck == 'F150')
+print("Is Jen's Volvo a XC60? I predict no.")
+print(SUV == 'XC60')
+print("Is Fort GDC on Woodhead? I predict no.")
+print(House == 'Woodhead')
+print("Is your daily carry a Nighthawk? I predict no.")
+print(Pistol == 'Nighthawk')
+print("Is your rifle a LaRue? I predict no.")
+print(Rifle == 'LaRue')
+
 
 dogs = ['barron','maggie','daisy']
-print("Is the first dog in the list named Barron? I predict true.")
+print("\nIs the first dog in the list named Barron? I predict true.")
 print(dogs[0] == 'barron')
 print("Is the second dog in the list Maggie or Daisy? I predict true.")
 print(dogs[1] == 'maggie') or (dogs[1] == 'daisy')
