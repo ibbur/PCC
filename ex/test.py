@@ -31,3 +31,6 @@ print("\n")
 
 cubes = [values**3 for values in range(1,11)]
 print(cubes)
+
+cars = ['audi', 'bmw']
+print(cars[1] == 'bmw')
