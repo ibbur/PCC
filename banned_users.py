@@ -63,7 +63,7 @@ if 'maggie' not in dogs:
     print('True')
 else:
     print('False')
-print("Is George the ferret in the list? I predict no.")
+print("Is George the ferret in the dogs list? I predict no.")
 print('george' in dogs)
 print("Are George the ferret and Mike the lizzard in the list? I predict no.")
 print('george' in dogs) and ('mike' in dogs)
