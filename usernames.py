@@ -52,5 +52,20 @@ for user in new_users:
     else:
         print("\n" + user.title() + " is available.")
 
-numbers = [number.range(1,10) for number in numbers]
-print("\n" + numbers)
+numbers = list(range(1,11))
+print(numbers)
+
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    else:
+        print(str(number) + "th")
+
+numbers = list(range(1,11))
+for number in numbers:
+    if number == 1:
+        print(str(number) + "st")
