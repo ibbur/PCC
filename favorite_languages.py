@@ -77,3 +77,81 @@ for name, languages in sorted(favorite_languages.items()):
         print("\n" + name.title() + "'s favorite languages are:")
         for language in languages:
             print("\t- " + language.title())
+
+
+dog_0 = {
+    'name': 'barron',
+    'species': 'dog',
+    'breed': 'weimerener',
+    'sex': 'male',
+    'color': 'grey',
+    }
+dog_1 = {
+    'name': 'maggie',
+    'species': 'dog',
+    'breed': 'weimerener',
+    'sex': 'female',
+    'color': 'blue'
+}
+dog_2 = {
+    'name': 'daisy',
+    'species': 'dog',
+    'breed': 'weimerener',
+    'sex': 'female',
+    'color': 'blue'
+}
+
+pets = [dog_0,dog_1,dog_2]
+
+for pet in pets:
+    print(pet)
+
+
+dog_spots = {
+    'barron': ['lazy boy','couch','under the coffee table'],
+    'maggie': ['her bed', 'my feet', 'the sofa'],
+    'daisy': ['the sofa', 'under the coffee table', 'our bed'],
+}
+
+for pet, places in sorted(dog_spots.items()):
+    print(pet.title() + "'s favorite places are:")
+    for place in places:
+        print("\t- " + place.title())
+
+favorite_numbers = {
+    'jen': [7,5,10],
+    'sarah': [2,5,11],
+    'edward': [3,9,24],
+    'phil': [5,15,20],
+    }
+
+for name, numbers in sorted(favorite_numbers.items()):
+    print(name.title() + "'s favorite numbers are:")
+    for number in numbers:
+        print("\t -" + str(number))
+
+cities = {
+    'houston': {
+        'country': 'usa',
+        'population': '2.5M',
+        'fact': 'restaraunt capital of the world',
+    },
+    'dallas': {
+        'country': 'usa',
+        'population': '1.34M',
+        'fact': 'uptight',
+    },
+    'austin': {
+        'country': 'usa',
+        'population': '950K',
+        'fact': 'dirty with CA transplants',
+    },
+}
+
+for k,v in sorted(cities.items()):
+    print("\nInformation about " + k.title() + ":")
+    for city, information in v.items():
+        if information == 'usa':
+            print("\t -" + information.upper())
+        else:
+            print("\t -" + information)
