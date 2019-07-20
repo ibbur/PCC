@@ -8,5 +8,27 @@ user_0 = {
     }
 
 for key, value in user_0.items():
-    print("\nKey: " + key.title())
-    print("Value: " + value.title())
+    print("\nKey: " + key.title() + "\nValue: " + value.title())
+
+# Revisiting per page 111 of PCC
+
+user_1 = {
+    'username': 'nasty',
+    'first': 'jannet',
+    'last': 'jackson',
+    }
+user_2 = {
+    'username': 'johnp',
+    'first': 'johnny',
+    'last': 'paradise',
+    }
+user_3 = {
+    'username': 'themclovin',
+    'first': 'Sam',
+    'last': 'mclovin'
+}
+
+users = [user_0, user_1, user_2, user_3,]
+
+for user in users:
+    print(user)

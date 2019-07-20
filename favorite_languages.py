@@ -10,6 +10,8 @@ favorite_languages = {
     'phil': 'python',
     }
 
+people = ['jen','sarah','barron','maggie','daisy']
+
 print("\nSarah's favorite language is " +
     favorite_languages['sarah'].title() + "." )
 
@@ -28,3 +30,50 @@ for name in sorted(favorite_languages.keys()):
 
 if 'erin' not in favorite_languages.keys():
     print("\nErin, please take our poll.")
+
+
+print("\nThe following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+
+# Using a set to remove repetition
+print("\nThe following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+
+# Using a set to remove repetition AND sorting
+print("\nThe following languages have been mentioned:")
+for language in sorted(set(favorite_languages.values())):
+    print(language.title())
+
+# Using a list and a dictionary in tandom
+print("\nMessage people about the poll.")
+for name in people:
+    if name in favorite_languages.keys():
+        print("\nThank you for taking the poll, " + name.title() + ".")
+    else:
+        print("\nYou should take our poll, " + name.title() + ".")
+
+# Added per page 112 of PCC
+
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+    }
+
+for name, languages in sorted(favorite_languages.items()):
+    print("\n" + name.title() + "'s favorite languages are:")
+    for language in languages:
+        print("\t- " + language.title())
+
+for name, languages in sorted(favorite_languages.items()):
+    if len(languages) <= 1:
+        print("\n" + name.title() + "'s favorite language is:")
+        for language in languages:
+            print("\t- " + language.title())
+    else:
+        print("\n" + name.title() + "'s favorite languages are:")
+        for language in languages:
+            print("\t- " + language.title())
