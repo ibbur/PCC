@@ -1,3 +1,11 @@
+# Aaron Frankel 2019-7-20
+# The purpose of this file is to learn about input()
+
+# message = input("Tell me something, and I will repeat it back to you: ")
+# print(message)
+message = raw_input("Tell me something, and I will repeat it back to you: ")
+print(message)
+
 prompt = "\nTell me something, and I'll repeat it back to you:"
 prompt += "\nEnter 'quit' to end the program. "
 message = ""
