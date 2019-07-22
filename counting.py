@@ -24,3 +24,8 @@ print("\n")
 
 even_numbers = list(range(2,21,2))
 print(even_numbers)
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1

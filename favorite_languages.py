@@ -134,7 +134,7 @@ cities = {
     'houston': {
         'country': 'usa',
         'population': '2.5M',
-        'fact': 'restaraunt capital of the world',
+        'fact': 'high humidity',
     },
     'dallas': {
         'country': 'usa',
@@ -147,11 +147,29 @@ cities = {
         'fact': 'dirty with CA transplants',
     },
 }
+# Add to nested dictionary piece by piece
+cities['san antonio'] = {}
+cities['san antonio']['country'] = 'usa'
+cities['san antonio']['population'] = '1.5M'
+cities['san antonio']['fact'] = 'boring'
 
-for k,v in sorted(cities.items()):
-    print("\nInformation about " + k.title() + ":")
-    for city, information in v.items():
+# Add to nested dictionary with one line
+cities['amarillo'] = {'country': 'usa', 'population': '200K', 'fact': 'dry'}
+
+for k_cities,v_cities in sorted(cities.items()):
+    print("\nInformation about " + k_cities.title() + ":")
+    for city, information in v_cities.items():
         if information == 'usa':
             print("\t -" + information.upper())
         else:
             print("\t -" + information)
+
+# Messing around
+
+like = ['austin', 'houston']
+
+for c_name in cities.keys():
+    if c_name in like:
+        print("\nWe like " + c_name.title() + ".")
+    else:
+        print("\nWe're meh about " + c_name.title() + ".")
