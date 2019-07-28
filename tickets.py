@@ -21,3 +21,11 @@ while active:
         print("Ticket prices for age 13 - 64 are $15.")
     elif age > 64:
         print("Senior ticket prices are $5.")
+    else:
+        active = False
+        break
+
+# Infinite loop Exercise 7-7
+one = 1
+while one <= 2:
+    print(1)
